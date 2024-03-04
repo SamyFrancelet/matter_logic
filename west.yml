@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/nrfconnect
   
   projects:
-    - name: ncs
+    - name: nrf
       repo-path: sdk-nrf
       remote: nrfconnect
       revision: v2.5.2
@@ -14,8 +14,10 @@ manifest:
         - name-allowlist:
           - zephyr
           - mcuboot
+          - hal_nordic
+          - nrfxlib
           - matter
-          - nrf802154
+          - nrf-802154
           - openthread
 
   self:
