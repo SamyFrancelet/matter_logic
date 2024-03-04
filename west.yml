@@ -1,0 +1,23 @@
+# Copyright (c) 2024 Samy Francelet
+
+manifest:
+  remotes:
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+  
+  projects:
+    - name: ncs
+      repo-path: sdk-nrf
+      remote: nrfconnect
+      revision: v2.5.2
+      import:
+        - name-allowlist:
+          - zephyr
+          - mcuboot
+          - matter
+          - nrf802154
+          - openthread
+
+  self:
+    # This repository should be cloned to 
+    path: app
